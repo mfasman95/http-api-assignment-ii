@@ -1,6 +1,9 @@
 {
   "name": "http-api-assignment-ii",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.6.0"
+  },
   "description": "HTTP API II",
   "main": "./src/server.js",
   "repository": "https://github.com/mfasman95/http-api-assignment-ii.git",

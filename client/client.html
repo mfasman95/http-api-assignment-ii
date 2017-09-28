@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
   <title>Our simple HTTP server</title>
-  <link rel="stylesheet" type="text/css" href="/style.css">
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-  <script type="text/babel">
-
-  </script>
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
+  <link rel="icon" href="/public/favicon.ico">
+  <script src="/public/bundle.js"></script>
 </head>
 <body>
   <section id="top">
@@ -25,8 +22,8 @@
         <option value='/notReal'>/notReal</option>
       </select>
       <select id="methodSelect">
-        <option value="get">GET</option>
-        <option value="head">HEAD</option>
+        <option value="GET">GET</option>
+        <option value="HEAD">HEAD</option>
       </select>
       <input type="submit" value="Get User" />
     </form>

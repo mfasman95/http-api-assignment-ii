@@ -1,0 +1,34 @@
+{
+  "name": "http-api-assignment-ii",
+  "version": "1.0.0",
+  "description": "HTTP API II",
+  "main": "./src/server.js",
+  "repository": "https://github.com/mfasman95/http-api-assignment-ii.git",
+  "author": "Matthew Fasman <matthew.f4sm4n@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "nodemon": "nodemon ./src/server.js",
+    "babel:watch": "babel --watch ./client/scripts --out-file ./client/bundle.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\""
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.12.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb/base",
+    "rules": {
+      "no-underscore-dangle": "off",
+      "no-plusplus": "off"
+    }
+  },
+  "babel": {
+    "presets": ["env"]
+  }
+}
